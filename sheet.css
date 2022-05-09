@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600%display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Josefin+Sans:wght@500&family=Otomanopee+One&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #ffff;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.bebida {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    height: 450px;
+    width: 750px;
+    border-radius: 200px 40px 150px;
+}
+
+.texto {
+    margin-left: 30px;
+    margin-top: 0;
+    position: relative;
+    top: 5px;
+    width: 675px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16pt;
+    color: #59606B;
+}
+
+.contato {
+    position: absolute;
+    bottom: 80px;
+    right: 25%;
+    color: #FE7EC6;
+    font-family: 'Otomanopee One', sans-serif; 
+}
+
+.botao {
+    position: relative;
+    display: inline-flex;
+    width: 120px;
+    height: 45px;
+    background: transparent;
+    border: transparent;
+}
+
+.botao{
+    font-size: 12px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s ;
+}
+
+.botao::before,
+.botao::after {
+    height: 45px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.botao::before {
+    position: absolute;
+    content: "COMPRE JÁ";
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+.botao::after {
+    position: absolute;
+    content: "<3";
+    font-weight: bold;
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+    border: 2px solid white;
+    background: #fff;
+}
+
+.botao:hover {
+    transform: translateZ(-25px) rotateX(-90deg);
+}
+
+.titulo {
+    font-family: 'Otomanopee One', sans-serif;
+    color: #4B94F2;
+    font-size: 30pt;
+    text-transform: uppercase;
+}
+
+.img1 {
+    position: absolute;
+    bottom: -10px;
+    height: 80px;
+    width: 80px;
+}
+
+.img2 {
+    position: absolute;
+    right: 120px;
+    bottom: -10px;
+    height: 80px;
+    width: 80px;
+}
+
+.texto details summary {
+    font-family: 'Otomanopee One', sans-serif;
+    color: #4B94F2;
+    text-transform: uppercase;
+    font-size: 14pt;
+}
+
